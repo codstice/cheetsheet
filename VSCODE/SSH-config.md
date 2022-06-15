@@ -15,7 +15,7 @@ Host <GUI 메뉴에 노출될 이름>
 ### RSA 활용시
 **원격 호스트에서 키파일 생성, 등록**
 - ```ssh-keygen -t rsa -b 4096```
-- ```$ cat ~/id_rsa.pub >> ~/.ssh/authorized_keys```
+- ```$ cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys```
 
 **~/.ssh/키파일 저장 후 다음 설정**
 ```
