@@ -23,5 +23,5 @@ Host <GUI 메뉴에 노출될 이름>
   HostName <IP주소 또는 도메인 입력>
   Port <포트번호>
   User <유저이름>
-  IdentityFile ~/.ssh/my_keyfile.pub
+  IdentityFile ~/.ssh/id_rsa.pub
 ```
