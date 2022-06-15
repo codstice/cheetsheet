@@ -1,3 +1,10 @@
+# 자주 활용하는 VSCODE GUI 툴
+Git History
+GitLens
+Git Graph
+
+---
+
 # git 설치
 
 ### 현재 디렉토리를 작업 폴더로 지정
