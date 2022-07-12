@@ -1,4 +1,4 @@
-/* Node.js */
+/* event emit - node.js */
 
 const EventEmitter = require('events');
 
@@ -12,7 +12,7 @@ element.removeAllListeners('event1'); // 이벤트 삭제
 console.log(element.listenerCount('event1')); // 중복 확인
 
 
-/* Browser */
+/* event emit - browser */
 
 class MyClass extends EventTarget {
   emitEvent() {
@@ -25,3 +25,17 @@ instance.addEventListener('customEvent', (e) => {
   console.log('Instance fired "customEvent".', e);
 });
 instance.emitEvent();
+
+
+/* global uncaughtException - node.js */
+
+process.on('uncaughtException', (err) => {
+  // ...
+});
+
+
+/* global uncaughtException - browser */
+
+window.onError = function(message, source, lineno, colno, error) {
+  // ...
+}
